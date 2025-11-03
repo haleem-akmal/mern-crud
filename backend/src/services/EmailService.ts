@@ -96,7 +96,7 @@ class EmailService {
   public async sendPasswordResetEmail(user: { name: string, email: string }, resetToken: string) {
     try {
       // 1. This is the FRONTEND URL. The user will click this link.
-      const resetLink = `http://localhost:5173/reset-password/${resetToken}`;
+      const resetLink = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
 
       // 2. Email HTML content
       const subject = 'Reset Your Hardware Shop Password';
