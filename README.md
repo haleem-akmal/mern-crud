@@ -1,6 +1,6 @@
 # MERN CRUD 
 
-This is a full-stack MERN (MongoDB, Express, React, Node.js) web application designed for managing hardware shop inventory. This project has been migrated from local file uploads to support cloud-based storage using **Cloudinary** and is deployed live on the web.
+This is a full-stack MERN (MongoDB, Express, React, Node.js) web application designed for managing inventory and profile. This project has been migrated from local file uploads to support cloud-based storage using **Cloudinary** and is deployed live on the web.
 
 ## 🚀 Live Demo & Repository
 
