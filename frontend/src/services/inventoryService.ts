@@ -1,8 +1,9 @@
 import axios from 'axios';
 
 // Our backend API URLs
-const API_INV_URL = '/api/inventory'; 
-const API_USER_URL = '/api/users'; 
+const BACKEND_API = import.meta.env.VITE_BACKEND_URL;
+const API_INV_URL = `${BACKEND_API}/api/inventory`;
+const API_USER_URL = `${BACKEND_API}/api/users`;
 
 /**
  * Helper Function:
