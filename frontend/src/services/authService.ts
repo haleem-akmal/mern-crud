@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // Backend API URL
-const API_URL = '/api/auth';
+const BACKEND_API = import.meta.env.VITE_BACKEND_URL;
+const API_URL = `${BACKEND_API}/api/auth`;
 
 /**
  * 1. Register User Function
