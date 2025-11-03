@@ -65,7 +65,7 @@ class EmailService {
 
       // 2. Construct the activation URL (using the frontend or backend URL)
       //    (Port 5173 is the default for Vite)
-      const activationLink = `http://localhost:5000/api/auth/activate/${activationToken}`;
+      const activationLink = `${process.env.BACKEND_URL}/api/auth/activate/${activationToken}`;
 
       // 3. Email content (HTML)
       const subject = 'Activate Your Hardware Shop Account';
