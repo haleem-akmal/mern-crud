@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* --- Basic Options --- */
+    "target": "ES2020", // Specify ECMAScript target version (e.g., ES6, ES2020)
+    "module": "commonjs", // Specify module code generation (Node.js uses 'commonjs')
+    "outDir": "./dist", // Redirect output structure to the 'dist' directory
+    "rootDir": "./src", // Specify the root directory of input files ('src' folder)
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules
+
+    /* --- Advanced Options --- */
+    "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts)
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "resolveJsonModule": true, // Allow importing .json files
+    "sourceMap": true // Generates corresponding '.map' files (good for debugging)
+  },
+  "include": [
+    "src/**/*" // Specify which files TypeScript needs to check (all files in 'src')
+  ],
+  "exclude": [
+    "node_modules" // Specify folders to exclude from checking
+  ]
+}
