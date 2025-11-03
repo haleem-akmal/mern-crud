@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // Our backend API URLs
-const API_INV_URL = 'http://localhost:5000/api/inventory';
-const API_USER_URL = 'http://localhost:5000/api/users';
+const API_INV_URL = '/api/inventory'; 
+const API_USER_URL = '/api/users'; 
 
 /**
  * Helper Function:
