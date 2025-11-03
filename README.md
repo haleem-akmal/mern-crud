@@ -1,27 +1,43 @@
-# (MERN CURD)
+# MERN CRUD 
 
-This is a full-stack MERN (MongoDB, Express, React, Node.js) web application designed for managing hardware shop inventory. This project has been migrated from local file uploads to support cloud-based storage using **Cloudinary**.
+This is a full-stack MERN (MongoDB, Express, React, Node.js) web application designed for managing hardware shop inventory. This project has been migrated from local file uploads to support cloud-based storage using **Cloudinary** and is deployed live on the web.
+
+## 🚀 Live Demo & Repository
+
+* **Live (Vercel):** **[https://mern-crud-frontend-eight.vercel.app](https://mern-crud-frontend-eight.vercel.app)**
+* **GitHub Repository:** **[https://github.com/haleem-akmal/mern-crud](https://github.com/haleem-akmal/mern-crud)**
 
 ## ✨ Features
 
-  * **User Authentication:**
-      * New user registration.
-      * **Email Activation:** Sends an activation link to new users via Nodemailer.
-      * User Login with JSON Web Token (JWT).
-      * **Password Reset:** A complete "Forgot Password" flow that emails a secure reset link.
-  * **Inventory Management (CRUD):**
-      * Create new inventory items.
-      * Read and list all items in a dashboard.
-      * Update existing items.
-      * Delete items from inventory.
-  * **Image Uploads:**
-      * Uses Multer and `multer-storage-cloudinary` to upload item images **directly to Cloudinary** cloud storage.
-  * **Profile Management:**
-      * Users can update their name and profile picture.
-  * **Protected Routes:**
-      * Frontend routes (like Dashboard and Profile) are protected using a `PrivateRoute` component, requiring a valid JWT to access.
-  * **Architecture:**
-      * The backend follows a **MVC (Model-View-Controller)** and **OOP (Class-based Services)** architecture for clean, scalable, and maintainable code.
+* **User Authentication:**
+    * New user registration.
+    * **Email Activation:** Sends an activation link to new users via Nodemailer.
+    * User Login with JSON Web Token (JWT).
+    * **Password Reset:** A complete "Forgot Password" flow that emails a secure reset link.
+* **Inventory Management (CRUD):**
+    * Create new inventory items.
+    * Read and list all items in a dashboard.
+    * Update existing items.
+    * Delete items from inventory.
+* **Cloud Image Uploads:**
+    * Uses Multer and `multer-storage-cloudinary` to upload item images **directly to Cloudinary** cloud storage.
+* **Profile Management:**
+    * Users can update their name and profile picture.
+* **Protected Routes:**
+    * Frontend routes (like Dashboard and Profile) are protected using a `PrivateRoute` component, requiring a valid JWT to access.
+* **Architecture:**
+    * The backend follows an **MVC (Model-View-Controller)** and **OOP (Class-based Services)** architecture for clean, scalable, and maintainable code.
+
+## 📸 Screenshots
+
+**(Note: To make this work, create a `screenshots` folder in your project's root, add your images, and push to GitHub. Then, update the paths below.)**
+
+| Homepage | Register Page | Login Page |
+| :---: | :---: | :---: |
+| ![Homepage](./screenshots/homepage.png) | ![Register Page](./screenshots/register-page.png) | ![Login Page](./screenshots/login-page.png) |
+| **Dashboard** | **Add/Edit Modal** | **Profile Page** |
+| ![Dashboard](./screenshots/dashboard-page.png) | ![Add/Edit Modal](./screenshots/modal-form.png) | ![Profile Page](./screenshots/profile-page.png) |
+
 
 ## 🛠️ Tech Stack
 
@@ -29,6 +45,18 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) web application des
 | :--- | :--- |
 | **Frontend** | React (v19+), TypeScript, Vite, TailwindCSS, React Router (v7), Axios |
 | **Backend** | Node.js, Express, TypeScript, MongoDB (Mongoose), JWT (jsonwebtoken), bcryptjs, Nodemailer, Cloudinary, Multer |
+
+## ☁️ Deployment Architecture
+
+This project is hosted using a **"Separate Deployment"** strategy:
+
+* **Frontend (React + Vite):**
+    * Hosted on **Vercel**.
+    * Manages all user-facing pages and client-side routing.
+
+* **Backend (Node.js + Express):**
+    * Hosted on **Vercel (as Serverless Functions)** or **Render (as a Web Service)**.
+    * Handles all API logic, database interactions, and authentication.
 
 ## 📁 Project Structure
 
@@ -46,16 +74,17 @@ MERN_CURD/
     └── tsconfig.json
 ```
 
+
 ## 🚀 How to Run Locally
 
 To run this project on your local machine, please follow the steps below.
 
 ### Prerequisites
 
-  * Node.js (v18 or higher)
-  * MongoDB (A local instance running or a MongoDB Atlas connection string)
+* Node.js (v18 or higher)
+* MongoDB (A local instance running or a MongoDB Atlas connection string)
 
-### 1\. Backend Setup
+### 1. Backend Setup
 
 1.  Navigate to the backend directory:
     ```bash
@@ -102,7 +131,7 @@ To run this project on your local machine, please follow the steps below.
     ```
     (The server will be running on `http://localhost:5000`)
 
-### 2\. Frontend Setup
+### 2. Frontend Setup
 
 1.  Open a **new terminal**.
 2.  Navigate to the frontend directory:
@@ -118,7 +147,3 @@ To run this project on your local machine, please follow the steps below.
     npm run dev
     ```
     (The app will be running on `http://localhost:5173`)
-
------
-
-Let me know once you have created this `README.md` file in your root directory. After that, we can proceed with the GitHub and Vercel deployment steps.
